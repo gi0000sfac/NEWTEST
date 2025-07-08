@@ -16,8 +16,8 @@ export default defineConfig({
         {
           text: '매뉴얼',
           items: [
-            { text: '아카이브 시스템 매뉴얼',             link: '/NEWTEST/manual/1._아카이브_시스템_매뉴얼' },
-            { text: '규정 제·개정 매뉴얼',               link: '/NEWTEST/manual/2._규정_제·개정_매뉴얼' },
+            { text: '아카이브 시스템 매뉴얼',             link: '/manual/1._아카이브_시스템_매뉴얼' },
+            { text: '규정 제·개정 매뉴얼',               link: '/manual/2._규정_제·개정_매뉴얼' },
             { text: '회계매뉴얼',                         link: '/NEWTEST/manual/3-1._회계매뉴얼' },
             { text: '수익사업 매뉴얼',                   link: '/NEWTEST/manual/3-2._수익사업_매뉴얼' },
             { text: '복무근태 매뉴얼',                   link: '/NEWTEST/manual/4-1._복무근태_매뉴얼' },
