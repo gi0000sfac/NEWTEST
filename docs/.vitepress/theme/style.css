@@ -135,29 +135,12 @@
 
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
-}
 
-/* 테이블 전체 폭을 100%로 */
-.vp-content table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1em;
+/* 편집 링크 상단에 아이콘 추가 */
+.vp-edit-link::before {
+  content: '✏️\00a0'; /* 연필 이모지 + 공백 */
+  display: inline-block;
+  vertical-align: middle;
 }
-
-/* 테이블 셀 테두리 */
-.vp-content table th,
-.vp-content table td {
-  border: 1px solid var(--vp-c-divider);
-  padding: 0.5em;
-}
-
-/* 헤더 배경색 */
-.vp-content table th {
-  background-color: var(--vp-c-bg-emphasis);
-  font-weight: 600;
-}
-
-/* 홀수/짝수 줄 배경색 */
-.vp-content table tr:nth-child(even) {
-  background-color: var(--vp-c-bg-tertiary);
+  
 }

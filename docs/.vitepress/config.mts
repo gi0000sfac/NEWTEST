@@ -1,14 +1,14 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/NEWSITE/',
   title: 'SFAC 자료모음',
   description: '매뉴얼 & 규정집을 한 곳에',
+  base: '/NEWTEST/',
 
   themeConfig: {
     nav: [
       { text: '매뉴얼',    link: '/manual/' },
-      { text: '규정집',    link: '/regulation/' },
+      { text: '규정집',    link: '/regulation/' }
     ],
 
     sidebar: {
@@ -49,7 +49,11 @@ export default defineConfig({
 
           ]
         }
-      ]
-    }
+      ]  
+    },
+    // 1) 상단 소셜 링크
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/gi0000sfac/NEWTEST' }
+    ]
   }
 })
