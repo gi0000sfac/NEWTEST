@@ -6,9 +6,11 @@ export default defineConfig({
   base: process.env.NODE_ENV === 'production'
     ? '/NEWTEST/'   // → GitHub Pages 레포 이름
     : '/',
-  publicDir: 'docs/.vitepress/public',
 
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: '매뉴얼',    link: '/manual/' },
       { text: '규정집',    link: '/regulation/' }
