@@ -3,7 +3,10 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'SFAC 자료모음',
   description: '매뉴얼 & 규정집을 한 곳에',
-  base: '/NEWTEST/',
+  base: process.env.NODE_ENV === 'production'
+    ? '/NEWTEST/'   // → GitHub Pages 레포 이름
+    : '/',
+  publicDir: 'docs/.vitepress/public',
 
   themeConfig: {
     nav: [
