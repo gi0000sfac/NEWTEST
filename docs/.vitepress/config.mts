@@ -25,7 +25,7 @@ export default defineConfig({
             { text: '규정 제·개정 매뉴얼',               link: '/manual/2._규정_제·개정_매뉴얼' },
             { text: '회계매뉴얼',                         link: '/manual/3-1._회계매뉴얼' },
             { text: '수익사업 매뉴얼',                   link: '/manual/3-2._수익사업_매뉴얼' },
-            { text: '복무근태 매뉴얼',                   link: '/manual/매뉴얼_작성지침_서식파일_' },
+            { text: '복무근태 매뉴얼',                   link: '/manual/매뉴얼 작성지침 서식파일' },
             { text: '난임치료휴가 운영지침',             link: '/manual/4-2._난임치료휴가_운영지침' },
             { text: '육아시간 사용지침',                 link: '/manual/4-3._육아시간_사용지침' },
             { text: '장기재직자 재충전휴가 사용지침',     link: '/manual/4-4._장기재직자_재충전휴가_사용지침' },
