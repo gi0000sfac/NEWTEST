@@ -3,7 +3,7 @@ import footnote from 'markdown-it-footnote'
 
 export default defineConfig({
   title: 'SFAC 자료모음',
-  description: '매뉴얼 & 규정집을 한 곳에',
+  description: '매뉴얼&규정&문화정책을 한 곳에',
   base: process.env.NODE_ENV === 'production'
     ? '/NEWTEST/'   // → GitHub Pages 레포 이름
     : '/',
