@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import footnote from 'markdown-it-footnote' 
 
 export default defineConfig({
   title: 'SFAC 자료모음',
@@ -6,6 +7,11 @@ export default defineConfig({
   base: process.env.NODE_ENV === 'production'
     ? '/NEWTEST/'   // → GitHub Pages 레포 이름
     : '/',
+    markdown: {
+      config: (md) => {
+        md.use(footnote) // 2. 플러그인 사용 설정
+      }
+    },
 
   themeConfig: {
     search: {
@@ -13,7 +19,8 @@ export default defineConfig({
     },
     nav: [
       { text: '매뉴얼',    link: '/manual/' },
-      { text: '규정집',    link: '/regulation/' }
+      { text: '규정집',    link: '/regulation/' },
+      { text: '문화정책',    link: '/policy/' }
     ],
 
     sidebar: {
@@ -66,7 +73,25 @@ export default defineConfig({
             { text: '규정관리규정',                 link: '/regulation/102_재단법인 서울문화재단 정관(231024)' },
           ]
         }
-      ]  
+      ],  
+      '/policy/': [
+        {
+          text: '문화정책'
+        },
+        
+        {
+          text: '지역문화관련',
+          items: [
+            { text: '위기의 지역문화재단',                 link: '/policy/위기의 지역문화재단, 현실을 마주할 시간' },
+          ]
+        },
+        {
+          text: '예술지원관련',
+          items: [
+            { text: '모아보기',                 link: '/policy/지원정책관련 링크 모음' },
+          ]
+        }
+      ]
     },
     // 1) 상단 소셜 링크
     socialLinks: [

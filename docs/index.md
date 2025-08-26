@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: 규정집
       link: /regulation/
+    - theme: alt
+      text: 문화정책
+      link: /policy/
 
 features:
   - title: 공지
