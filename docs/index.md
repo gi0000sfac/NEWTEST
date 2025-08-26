@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "매뉴얼&규정&정책"
-  text: "회계 예산 인사 문화정책 정보는 한번에!"
+  text: "업무 정보는 한번에!"
   tagline: 테스트입니다. 열람용입니다.
   actions:
     - theme: brand
